@@ -33,7 +33,7 @@ impl Config {
         Ok(Config {
             query: args[1].clone(),
             file_path: args[2].clone(),
-            ignore_case: false
+            ignore_case: env::var("IGNORE_CASE").is_ok()
         })
     }
 }
