@@ -1,3 +1,4 @@
+use minigrep::search;
 use std::error::Error;
 use std::{env, fs, process};
 
